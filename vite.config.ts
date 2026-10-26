@@ -7,9 +7,9 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  // Explicit deploy intent: fail the build if nitro is missing. On Vercel, Nitro auto-selects
-  // the vercel preset; inside Lovable, LOVABLE_NITRO_PRESET still pins Cloudflare.
-  nitro: true,
+  // Pin Vercel for self-hosted / Vercel CI builds. Inside Lovable, LOVABLE_NITRO_PRESET
+  // still overrides this back to Cloudflare.
+  nitro: { preset: "vercel" },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
