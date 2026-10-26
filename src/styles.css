@@ -1,0 +1,112 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-navy: var(--navy);
+  --color-navy-foreground: var(--navy-foreground);
+  --color-indigo-deep: var(--indigo-deep);
+  --color-cyan-soft: var(--cyan-soft);
+  --color-kakao: var(--kakao);
+  --color-kakao-foreground: var(--kakao-foreground);
+}
+
+:root {
+  --radius: 0.75rem;
+  /* data smart brand: deep slate & indigo, electric blue + soft cyan accents */
+  --background: oklch(0.984 0.003 247.858); /* slate-50 */
+  --foreground: oklch(0.208 0.042 265.755); /* slate-900 */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.208 0.042 265.755);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.208 0.042 265.755);
+  --primary: oklch(0.546 0.245 262.881); /* #2563EB electric blue */
+  --primary-foreground: oklch(0.984 0.003 247.858);
+  --secondary: oklch(0.968 0.007 247.896);
+  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --muted: oklch(0.968 0.007 247.896);
+  --muted-foreground: oklch(0.554 0.046 257.417);
+  --accent: oklch(0.95 0.03 230);
+  --accent-foreground: oklch(0.424 0.199 265.638);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.929 0.013 255.508);
+  --input: oklch(0.929 0.013 255.508);
+  --ring: oklch(0.546 0.245 262.881);
+  --navy: oklch(0.208 0.042 265.755); /* #0F172A deep slate */
+  --navy-foreground: oklch(0.968 0.007 247.896);
+  --indigo-deep: oklch(0.257 0.09 281.288); /* #1E1B4B */
+  --cyan-soft: oklch(0.715 0.143 215.221); /* #06B6D4 */
+  --kakao: oklch(0.907 0.183 101.85); /* #FEE500 */
+  --kakao-foreground: oklch(0.25 0.03 60);
+  --gradient-hero: radial-gradient(
+    120% 100% at 50% 0%,
+    var(--indigo-deep) 0%,
+    var(--navy) 55%,
+    oklch(0.16 0.04 265) 100%
+  );
+  --shadow-elegant: 0 20px 50px -20px
+    color-mix(in oklab, var(--primary) 35%, transparent);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: "Pretendard Variable", Pretendard, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility text-gradient {
+  background: linear-gradient(120deg, var(--primary), var(--cyan-soft));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-hero {
+  background: var(--gradient-hero);
+}
+
+@utility shadow-elegant {
+  box-shadow: var(--shadow-elegant);
+}

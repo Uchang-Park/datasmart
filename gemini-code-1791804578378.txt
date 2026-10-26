@@ -1,0 +1,52 @@
+data smart (데이터스마트 공식 웹사이트)
+├── 0.0 GNV (상단 고정 네비게이션)
+│   ├── Logo ("data smart" - 클릭 시 최상단 스크롤)
+│   ├── Nav Links
+│   │   ├── 1.0 회사 소개 (#about)
+│   │   ├── 2.0 데이터 분석 & AI (#services-engineering)
+│   │   ├── 3.0 데이터 교육 (#services-education)
+│   │   └── 4.0 문의하기 (#contact)
+│   └── Header CTA Button ("🚀 프로젝트/교육 문의하기" -> #contact 스크롤)
+│
+├── 1.0 Hero & Trust Banner (메인 비주얼 & 검증 자산)
+│   ├── 1.1 Hero Section
+│   │   ├── 공공기관/B2B 타깃 뱃지 ("🏛️ 공공기관 · B2B 맞춤형 데이터 & AI 파트너")
+│   │   ├── 메인 헤드라인 ("전문 서적 저자의 깊이 있는 노하우로 DB 구축부터 RAG AI, 기업 맞춤 교육까지")
+│   │   ├── 서브 헤드라인 (30년급 수석 아키텍트 직영 및 책임 수행 강조)
+│   │   └── Quick Action Buttons
+│   │       ├── Primary: "📋 1:1 맞춤 상담 신청하기" (#contact 스크롤)
+│   │       └── Secondary: "💬 카카오톡 오픈채팅 문의" (카카오 노란색 버튼)
+│   └── 1.2 Core Credentials Bar (신뢰도 검증 키 비주얼)
+│       ├── 저서 카드: 한빛아카데미 《데이터베이스 개론 및 실습》 저자
+│       ├── 자격증 카드: 빅데이터분석기사 / SQLD 보유
+│       └── 수행 방식 카드: 하도급 없는 1:1 수석 아키텍트 직접 수행
+│
+├── 2.0 About Us (#about: 대표자 퍼스널 브랜딩 & 회사 소개)
+│   ├── 2.1 Representative Profile
+│   │   ├── 저서 출판 이력 및 주요 기여 분야
+│   │   └── 데이터베이스(DB) & AI 기술 스택 (SQL, DB Architecture, RAG, Python 등)
+│   └── 2.2 Core Competency (왜 데이터스마트인가?)
+│       ├── 1:1 직영 책임제 (외주 인턴 투입 차단)
+│       ├── 이론과 실무의 완벽한 결합 (대학 교재 저술 + 현업 DB/AI 아키텍처)
+│       └── 공공·B2B 맞춤 프로세스 (보안 준수, 투명한 공정 관리)
+│
+├── 3.0 Services (주요 사업 영역)
+│   ├── 3.1 Data & AI Engineering (#services-engineering: 데이터 분석 & AI)
+│   │   ├── DB 구축 및 성능 최적화 (대용량 DB 설계, 쿼리 튜닝, 인덱스 재설계)
+│   │   ├── RAG 기반 AI 시스템 구축 (기업 내부 데이터 연동 맞춤형 RAG 구현)
+│   │   └── 데이터 시각화 & 대시보드 (경영진/공공기관 맞춤 모니터링 구축)
+│   └── 3.2 Data Education (#services-education: 데이터 전문 교육)
+│       ├── 기업 및 공공기관 출강 (기관 맞춤형 DB 활용 및 AI 툴링 실무)
+│       ├── 1:1 맞춤형 실습 코칭 (실무 프로젝트 기반 파이프라인 밀착 지도)
+│       └── 자격증 대비반 (SQLD / 빅데이터분석기사 단기 합격 커리큘럼)
+│
+├── 4.0 Contact Hub (#contact: 최종 문의 수집)
+│   ├── 4.1 Section Title ("데이터스마트와 함께 데이터 기반의 성장을 논의하세요")
+│   └── 4.2 Dual Contact Channels (2가지 선택형 문의 카드)
+│       ├── Option A (Google Form Card): "📋 구글폼으로 1:1 맞춤 상담 신청하기"
+│       └── Option B (Kakao Chat Card): "💬 카카오톡 1:1 오픈채팅 상담하기"
+│
+└── 5.0 Footer (하단 정보)
+    ├── Company Info (상호명: 데이터스마트 | 대표자: 수석 아키텍트 | 설립: 2026년 10월)
+    ├── Quick Links (회사 소개 | 데이터 분석 & AI | 데이터 교육 | 문의하기)
+    └── Copyright Notice (© 2026 data smart. All rights reserved.)
